@@ -38,7 +38,19 @@ def see_contacts(contacts):
 
 def update_contacts(contacts):
     see_contacts(contacts)
-    print("\nWhich contact would you like to update? ")
+    while True:
+        choice = input("\nWhich contact would you like to update? ")
+        try:
+            choice = int(choice)
+            if choice < 1 or choice >= len(contacts):
+                print("Type a valid contact index number")
+            else:
+                break
+        except ValueError:
+            print("Invalid index, please type an integer number")
+    print(choice)
+
+
     return
 
 
