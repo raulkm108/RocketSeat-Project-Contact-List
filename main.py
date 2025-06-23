@@ -15,7 +15,7 @@ def add_new_contact(contacts):
             favorite = False
             break
         else:
-            print("Type y or n")
+            print("Invalid input. Please type 'y' for yes and 'n' for no")
     contact = {"name": name, "number": number, "email": email, "favorite": favorite}
     
     contacts.append(contact)
