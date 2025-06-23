@@ -16,6 +16,9 @@ def add_new_contact(contacts):
             break
         else:
             print("Type y or n")
+    contact = {"name": name, "number": number, "email": email, "favorite": favorite}
+    
+    contacts = contacts.append(contact)
 
 
 while True:
