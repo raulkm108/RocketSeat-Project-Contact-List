@@ -15,7 +15,7 @@ def add_new_contact(contacts):
             favorite = False
             break
         else:
-            print("Type y or n: ")
+            print("Type y or n")
 
 
 while True:
@@ -35,4 +35,5 @@ while True:
         add_new_contact(contacts)
 
     elif choice == "7":
+        print("Programm terminated")
         break
