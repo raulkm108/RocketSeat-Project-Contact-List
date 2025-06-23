@@ -34,6 +34,11 @@ def see_contacts(contacts):
             print("Favorite: No")
     return
 
+def update_contacts(contacts):
+    see_contacts(contacts)
+    print("\nWhich contact would you like to update? ")
+    for contact in contacts:
+
 
 while True:
     print("\nContact List.")
