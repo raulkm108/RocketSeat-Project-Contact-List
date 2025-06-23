@@ -6,8 +6,8 @@ def add_new_contact(contacts):
     name = input("Type the person's name: ")
     number = input("Type it's phone number: ")
     email = input("Type it's Email: ")
-    favorite_choice = input ("Do you want it to be in your favorite list? [y / n]")
     while True:
+        favorite_choice = input ("Do you want it to be in your favorite list? [y / n]: ")
         if favorite_choice == "y":
             favorite = True
             break
