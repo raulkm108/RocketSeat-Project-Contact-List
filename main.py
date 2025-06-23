@@ -55,8 +55,15 @@ def update_contacts(contacts):
     
     corrected_index = choice - 1
 
-    print (f"You chose the contact {contacts[corrected_index]["name"]}")
-    print(choice)
+    print(f"\nYou chose the contact \"{contacts[corrected_index]["name"]}\"")
+
+    counter = 1
+    for key, item in contacts[corrected_index].items():
+        if key == "favorite":
+            continue
+        print(f"{counter}. {key}: {item}")
+        counter += 1
+    choice = input(f"\nWhat would you like to change?")
 
 
     return
