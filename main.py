@@ -23,6 +23,7 @@ def add_new_contact(contacts):
     print(f"\n{contact["name"]}'s contact was added successfully")
 
 def see_contacts(contacts):
+    print("\n Contacts list:")
     for contact in contacts:
         print(f"\nName: {contact["name"]}\nPhone Number: {contact["number"]}\nEmail: {contact["email"]}")
         if contact["favorite"]:
