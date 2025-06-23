@@ -18,12 +18,12 @@ def add_new_contact(contacts):
             print("Type y or n")
     contact = {"name": name, "number": number, "email": email, "favorite": favorite}
     
-    contacts = contacts.append(contact)
+    contacts.append(contact)
 
     print(f"\n{contact["name"]}'s contact was added successfully")
 
 def see_contacts(contacts):
-    print("\n Contacts list:")
+    print("\nContacts list:")
     for contact in contacts:
         print(f"\nName: {contact["name"]}\nPhone Number: {contact["number"]}\nEmail: {contact["email"]}")
         if contact["favorite"]:
