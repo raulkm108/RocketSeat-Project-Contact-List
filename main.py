@@ -28,7 +28,7 @@ def see_contacts(contacts):
     print("\nContacts list:")
     counter = 1
     for contact in contacts:
-        print(f"/n{counter}. ")
+        print(f"\n{counter}. ")
         print(f"Name: {contact["name"]}\nPhone Number: {contact["number"]}\nEmail: {contact["email"]}")
         counter += 1
         if contact["favorite"]:
