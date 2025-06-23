@@ -20,6 +20,9 @@ def add_new_contact(contacts):
     
     contacts = contacts.append(contact)
 
+def see_contacts(contacts):
+    print(contacts)
+
 
 while True:
     print("\nContact List.")
@@ -36,6 +39,9 @@ while True:
 
     if choice == "1":
         add_new_contact(contacts)
+
+    if choice == "2":
+        see_contacts(contacts)
 
     elif choice == "7":
         print("Programm terminated")
