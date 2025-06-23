@@ -26,8 +26,11 @@ def add_new_contact(contacts):
 
 def see_contacts(contacts):
     print("\nContacts list:")
+    counter = 1
     for contact in contacts:
-        print(f"\nName: {contact["name"]}\nPhone Number: {contact["number"]}\nEmail: {contact["email"]}")
+        print(f"/n{counter}. ")
+        print(f"Name: {contact["name"]}\nPhone Number: {contact["number"]}\nEmail: {contact["email"]}")
+        counter += 1
         if contact["favorite"]:
             print("Favorite: Yes")
         else:
@@ -37,7 +40,7 @@ def see_contacts(contacts):
 def update_contacts(contacts):
     see_contacts(contacts)
     print("\nWhich contact would you like to update? ")
-    for contact in contacts:
+    return
 
 
 while True:
