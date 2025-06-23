@@ -20,6 +20,8 @@ def add_new_contact(contacts):
     
     contacts = contacts.append(contact)
 
+    print(f"\n{contact["name"]}'s contact was added successfully")
+
 def see_contacts(contacts):
     print(contacts)
 
