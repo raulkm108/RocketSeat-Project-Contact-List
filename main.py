@@ -52,6 +52,10 @@ def update_contacts(contacts):
                 break
         except ValueError:
             print("Invalid index, please type an integer number")
+    
+    corrected_index = choice - 1
+
+    print (f"You chose the contact {contacts[corrected_index]["name"]}")
     print(choice)
 
 
