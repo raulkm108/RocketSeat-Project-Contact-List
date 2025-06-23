@@ -22,6 +22,8 @@ def add_new_contact(contacts):
 
     print(f"\n{contact["name"]}'s contact was added successfully")
 
+    return
+
 def see_contacts(contacts):
     print("\nContacts list:")
     for contact in contacts:
@@ -30,6 +32,7 @@ def see_contacts(contacts):
             print("Favorite: Yes")
         else:
             print("Favorite: No")
+    return
 
 
 while True:
