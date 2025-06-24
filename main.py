@@ -96,7 +96,7 @@ def favorite_contact(contacts):
     else:
         see_contacts(contacts)
     
-
+    return
     
 
     '''
