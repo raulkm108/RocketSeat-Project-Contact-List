@@ -128,7 +128,7 @@ def see_favorites(contacts):
                 print(f"\n{counter}. {contact["name"]}\nPhone number: {contact["number"]}\nEmail: {contact["email"]}")
                 counter += 1
         if counter == 1:
-            print("no favorite contacts available")
+            print("No favorite contacts available")
     return
 
     '''
