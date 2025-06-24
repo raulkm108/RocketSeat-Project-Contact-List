@@ -119,7 +119,7 @@ def favorite_contact(contacts):
     
 def see_favorites(contacts):
     if not contacts:
-        print("No contacts avilable")
+        print("\nNo contacts avilable")
     else:
         counter = 1
         for contact in contacts:
