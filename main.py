@@ -105,14 +105,14 @@ def favorite_contact(contacts):
                 break
         except ValueError:
             print("Invalid index, please type an integer number")
-            
+
     corrected_index = choice - 1
     chosen_contact = contacts[corrected_index]
 
     if chosen_contact["favorite"]:
         print("\nThis contact is already in the favorite list")
     else:
-        contacts[corrected_index]["favorite"] == True
+        contacts[corrected_index]["favorite"] = True
         print(f"\nThe contact \"{chosen_contact["name"]}\" is now in the favorite list!")
     
     return
