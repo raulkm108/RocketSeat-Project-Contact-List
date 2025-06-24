@@ -96,7 +96,14 @@ def favorite_contact(contacts):
     else:
         see_contacts(contacts)
 
-    choice = input("Which contact would you like to favorite? ")
+    choice = input("\nWhich contact would you like to favorite? ")
+
+    for contact in contacts:
+        if contact["favorite"]:
+            print("\nThis contact is already in the favorite list")
+        else:
+            contact["favorite"] == True
+            print(f"\nThe contact \"{contact["name"]}\" is now in the favorite list!")
     
     return
     
