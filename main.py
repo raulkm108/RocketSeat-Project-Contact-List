@@ -122,9 +122,10 @@ def see_favorites(contacts):
         print("\nNo contacts avilable")
     else:
         counter = 1
+        print("\nFavorites list:")
         for contact in contacts:
             if contact["favorite"] == True:
-                print(f"{counter}. {contact["name"]}\nPhone number: {contact["number"]}\nEmail: {contact["email"]}")
+                print(f"\n{counter}. {contact["name"]}\nPhone number: {contact["number"]}\nEmail: {contact["email"]}")
                 counter += 1
 
     return
