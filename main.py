@@ -66,7 +66,7 @@ def update_contacts(contacts):
         counter += 1
 
     while True:
-        choice = input(f"\nWhat would you like to change?")
+        choice = input(f"\nWhat would you like to change? ")
         try:
             choice = int(choice)
             if choice < 1 or choice > (len(current_contact) - 1):
@@ -76,8 +76,19 @@ def update_contacts(contacts):
         except ValueError:
             print("Invalid index, please type an integer number")
 
-    if choice 
-
+    old_name = current_contact["name"]
+    if choice == 1:
+        new_name = input("Type a new name for this contact: ")
+        contacts[corrected_index]["name"] = new_name
+        print(f"\nName of the contact \"{old_name}\" was successfully updated to \"{new_name}\"")
+    if choice == 2:
+        new_number = input("Type a new number for this contact: ")
+        contacts[corrected_index]["number"] = new_number
+        print(f"\nNumber of the contact \"{current_contact["name"]}\" was successfully updated to \"{new_number}\"")
+    if choice == 3:
+        new_email = input("Type a new email for this contact: ")
+        contacts[corrected_index]["email"] = new_email
+        print(f"\nEmail of the contact \"{current_contact["name"]}\" was successfully updated to \"{new_email}\"")
 
     return
 
