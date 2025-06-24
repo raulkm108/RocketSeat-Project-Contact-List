@@ -95,8 +95,17 @@ def favorite_contact(contacts):
         return
     else:
         see_contacts(contacts)
-
-    choice = input("\nWhich contact would you like to favorite? ")
+    while True:
+        choice = input("\nWhich contact would you like to favorite? ")
+        try:
+            choice = int(choice)
+            if choice < 1 or choice > len(contacts):
+                print("Type a valid contact index number")
+            else:
+                break
+        except ValueError:
+            print("Invalid index, please type an integer number")
+            
     corrected_index = choice - 1
     chosen_contact = contacts[corrected_index]
 
