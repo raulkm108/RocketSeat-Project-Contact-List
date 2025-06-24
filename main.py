@@ -89,6 +89,10 @@ def update_contacts(contacts):
         else:
             print("Invalid choice. Please select a valid index")
 
+def favorite_contact(contacts):
+    
+    
+
     '''
     while True:
         choice = input(f"\nWhat would you like to change? ")
