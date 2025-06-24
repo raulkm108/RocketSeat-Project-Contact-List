@@ -65,6 +65,8 @@ def update_contacts(contacts):
         print(f"{counter}. {key}: {item}")
         counter += 1
 
+        
+    '''
     while True:
         choice = input(f"\nWhat would you like to change? ")
         try:
@@ -89,7 +91,7 @@ def update_contacts(contacts):
         new_email = input("Type a new email for this contact: ")
         contacts[corrected_index]["email"] = new_email
         print(f"\nEmail of the contact \"{current_contact["name"]}\" was successfully updated to \"{new_email}\"")
-
+    '''
     return
 
 
