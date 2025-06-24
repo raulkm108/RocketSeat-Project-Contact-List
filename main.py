@@ -140,6 +140,9 @@ while True:
     if choice == "3":
         update_contacts(contacts)
 
+    if choice =="4":
+        favorite_contact(contacts)
+
     elif choice == "7":
         print("Programm terminated")
         break
