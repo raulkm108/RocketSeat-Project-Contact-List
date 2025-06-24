@@ -117,6 +117,8 @@ def favorite_contact(contacts):
     
     return
     
+def see_favorites(contacts):
+    
 
     '''
     while True:
