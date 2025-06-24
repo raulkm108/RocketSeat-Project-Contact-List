@@ -31,9 +31,9 @@ def see_contacts(contacts):
         print(f"\n{counter}. {contact["name"]}\nPhone Number: {contact["number"]}\nEmail: {contact["email"]}")
         counter += 1
         if contact["favorite"]:
-            print("Favorite: [ ]")
+            print("Favorite: [✔]")
         else:
-            print("Favorite: [✔}")
+            print("Favorite: [ ]")
     return
 
 def update_contacts(contacts):
