@@ -71,22 +71,23 @@ def update_contacts(contacts):
         "2": {"key": "number", "prompt": "Type a new number for this contact: "},
         "3": {"key": "email", "prompt": "Type a new email for this contact: "}
         }
-    
-    choice = input(f"\nWhat would you like to change? ")
+    while True:
+        choice = input(f"\nWhat would you like to change? ")
 
-    if choice in mapped_dictionary:
-        field_info = mapped_dictionary[choice]
-        field_key = field_info["key"]
-        current_prompt = field_info["prompt"]
+        if choice in mapped_dictionary:
+            field_info = mapped_dictionary[choice]
+            field_key = field_info["key"]
+            current_prompt = field_info["prompt"]
 
-        old_value = current_contact[field_key]
-        new_value = input(current_prompt)
-        contacts[corrected_index][field_key] = new_value
+            old_value = current_contact[field_key]
+            new_value = input(current_prompt)
+            contacts[corrected_index][field_key] = new_value
 
-        print(f"\nThe {field_key} of the contact \"{old_name}\" was successfully updated from \"{old_value}\" to \"{new_value}\"")
-    
-    else:
-        print("Invalid choice. Please select a valid index")
+            print(f"\nThe {field_key} of the contact \"{old_name}\" was successfully updated from \"{old_value}\" to \"{new_value}\"")
+            break
+        
+        else:
+            print("Invalid choice. Please select a valid index")
 
     '''
     while True:
