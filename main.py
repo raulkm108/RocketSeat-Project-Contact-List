@@ -95,6 +95,8 @@ def favorite_contact(contacts):
         return
     else:
         see_contacts(contacts)
+
+    choice = input("Which contact would you like to favorite? ")
     
     return
     
