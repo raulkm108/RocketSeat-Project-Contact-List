@@ -65,7 +65,10 @@ def update_contacts(contacts):
         print(f"{counter}. {key}: {item}")
         counter += 1
 
-        
+    maped_dictionary = {1: {"key": "name", "prompt": "Type a new name for this contact: "},
+                        2: {"key": "number", "prompt": "Type a new number for this contact: "},
+                        3: {"key": "email", "prompt": "Type a new email for this contact: "}}
+
     '''
     while True:
         choice = input(f"\nWhat would you like to change? ")
