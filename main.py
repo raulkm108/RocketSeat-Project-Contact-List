@@ -91,7 +91,7 @@ def update_contacts(contacts):
 
 def favorite_contact(contacts):
     if not contacts:
-        print("\nNo contacts available to update!")
+        print("\nNo contacts available to favorite!")
         return
     else:
         see_contacts(contacts)
