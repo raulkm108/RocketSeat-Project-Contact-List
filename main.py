@@ -118,7 +118,16 @@ def favorite_contact(contacts):
     return
     
 def see_favorites(contacts):
-    
+    if not contacts:
+        print("No contacts avilable")
+    else:
+        counter = 1
+        for contact in contacts:
+            if contact["favorite"] == True:
+                print(f"{counter}. {contact["name"]}\nPhone number: {contact["number"]}\nEmail: {contact["email"]}")
+                counter += 1
+
+    return
 
     '''
     while True:
