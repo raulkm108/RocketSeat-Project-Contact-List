@@ -57,13 +57,26 @@ def update_contacts(contacts):
 
     print(f"\nYou chose the contact \"{contacts[corrected_index]["name"]}\"")
 
+    current_contact = contacts[corrected_index]
     counter = 1
-    for key, item in contacts[corrected_index].items():
+    for key, item in current_contact.items():
         if key == "favorite":
             continue
         print(f"{counter}. {key}: {item}")
         counter += 1
-    choice = input(f"\nWhat would you like to change?")
+
+    while True:
+        choice = input(f"\nWhat would you like to change?")
+        try:
+            choice = int(choice)
+            if choice < 1 or choice > (len(current_contact) - 1):
+                print("Type a valid index number")
+            else:
+                break
+        except ValueError:
+            print("Invalid index, please type an integer number")
+
+    if choice 
 
 
     return
