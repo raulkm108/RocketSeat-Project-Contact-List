@@ -90,6 +90,12 @@ def update_contacts(contacts):
             print("Invalid choice. Please select a valid index")
 
 def favorite_contact(contacts):
+    if not contacts:
+        print("\nNo contacts available to update!")
+        return
+    else:
+        see_contacts(contacts)
+    
 
     
 
