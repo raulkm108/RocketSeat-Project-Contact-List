@@ -90,11 +90,7 @@ def update_contacts(contacts):
             print("Invalid choice. Please select a valid index")
 
 def favorite_contact(contacts):
-    if not contacts:
-        print("\nNo contacts available to favorite!")
-        return
-    else:
-        see_contacts(contacts)
+    see_contacts(contacts)
     while True:
         choice = input("\nWhich contact would you like to favorite? ")
         try:
