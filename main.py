@@ -41,11 +41,7 @@ def see_contacts(contacts):
         return
 
 def update_contacts(contacts):
-    if not contacts:
-        print("\nNo contacts available to update!")
-        return
-    else:
-        see_contacts(contacts)
+    see_contacts(contacts)
     while True:
         choice = input("\nWhich contact would you like to update? ")
         try:
