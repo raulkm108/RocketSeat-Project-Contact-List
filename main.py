@@ -149,7 +149,9 @@ def delete_contact(contacts):
         except ValueError:
             print("Invalid index, please type an integer number")
     
-    removed_contact = contacts.pop[choice]
+    corrected_index = choice - 1
+    
+    removed_contact = contacts.pop(corrected_index)
 
     print(f"The contact \"{removed_contact["name"]}\" was succesfully removed")
 
