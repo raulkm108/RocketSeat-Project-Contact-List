@@ -38,7 +38,7 @@ def see_contacts(contacts):
                 print("Favorite: [✔]")
             else:
                 print("Favorite: [ ]")
-        return
+        return True
 
 def update_contacts(contacts):
     if not see_contacts(contacts):
@@ -117,7 +117,7 @@ def favorite_contact(contacts):
     
 def see_favorites(contacts):
     if not contacts:
-        print("No contacts avilable")
+        print("No contacts available!")
     else:
         counter = 1
         print("\nFavorites list:")
