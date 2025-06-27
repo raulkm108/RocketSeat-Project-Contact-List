@@ -99,7 +99,6 @@ def favorite_contact(contacts):
         return
     else:
         choice = choice_verification(contacts,"Favorite")
-
         corrected_index = choice - 1
         chosen_contact = contacts[corrected_index]
 
@@ -129,19 +128,8 @@ def delete_contact(contacts):
     if not see_contacts(contacts):
         return
     else:
-        while True:
-            choice = input("\nWhich contact would you like to delete? ")
-            try:
-                choice = int(choice)
-                if choice < 1 or choice > len(contacts):
-                    print("Type a valid contact index number")
-                else:
-                    break
-            except ValueError:
-                print("Invalid index, please type an integer number")
-        
+        choice = choice_verification(contacts,"Remove")
         corrected_index = choice - 1
-        
         removed_contact = contacts.pop(corrected_index)
 
         print(f"The contact \"{removed_contact["name"]}\" was succesfully removed")
