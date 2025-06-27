@@ -1,5 +1,4 @@
 from menu_functions import add_new_contact, see_contacts, update_contacts, favorite_contact, see_favorites, delete_contact
-from verification_functions import choice_verification
 
 contacts = []
 
