@@ -139,7 +139,7 @@ def delete_contact(contacts):
         see_contacts(contacts) 
 
     while True:
-        choice = input("\nWhich contact would you like to favorite? ")
+        choice = input("\nWhich contact would you like to delete? ")
         try:
             choice = int(choice)
             if choice < 1 or choice > len(contacts):
