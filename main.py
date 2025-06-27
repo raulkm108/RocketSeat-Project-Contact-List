@@ -188,6 +188,9 @@ while True:
     if choice == "5":
         see_favorites(contacts)
 
+    if choice =="6":
+        deleta_contact(contacts)
+
     elif choice == "7":
         print("Programm terminated")
         break
