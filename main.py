@@ -1,24 +1,8 @@
-from menu_functions import add_new_contact, see_contacts, update_contacts
+from menu_functions import add_new_contact, see_contacts, update_contacts, favorite_contact
 from verification_functions import choice_verification
 
 contacts = []
 
-def favorite_contact(contacts):
-    if not see_contacts(contacts):
-        return
-    else:
-        choice = choice_verification(contacts,"Favorite")
-        corrected_index = choice - 1
-        chosen_contact = contacts[corrected_index]
-
-        if chosen_contact["favorite"]:
-            print("\nThis contact is already in the favorite list")
-        else:
-            contacts[corrected_index]["favorite"] = True
-            print(f"\nThe contact \"{chosen_contact["name"]}\" is now in the favorite list!")
-        
-        return
-    
 def see_favorites(contacts):
     if not contacts:
         print("No contacts available!")
