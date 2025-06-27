@@ -1,5 +1,5 @@
-import menu_functions
-import vericication_functions
+from menu_functions import add_new_contact
+from verification_functions import choice_verification
 
 contacts = []
 
