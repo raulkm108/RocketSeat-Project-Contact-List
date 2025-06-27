@@ -1,21 +1,7 @@
-from menu_functions import add_new_contact, see_contacts, update_contacts, favorite_contact
+from menu_functions import add_new_contact, see_contacts, update_contacts, favorite_contact, see_favorites
 from verification_functions import choice_verification
 
 contacts = []
-
-def see_favorites(contacts):
-    if not contacts:
-        print("No contacts available!")
-    else:
-        counter = 1
-        print("\nFavorites list:")
-        for contact in contacts:
-            if contact["favorite"] == True:
-                print(f"\n{counter}. {contact["name"]}\nPhone number: {contact["number"]}\nEmail: {contact["email"]}")
-                counter += 1
-        if counter == 1:
-            print("No favorite contacts available")
-    return
 
 def delete_contact(contacts):
     if not see_contacts(contacts):
