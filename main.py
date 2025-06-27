@@ -27,7 +27,7 @@ def add_new_contact(contacts):
 def see_contacts(contacts):
     if not contacts:
         print("No contacts available!")
-        return
+        return False
     else:
         print("\nContacts list:")
         counter = 1
@@ -41,7 +41,8 @@ def see_contacts(contacts):
         return
 
 def update_contacts(contacts):
-    see_contacts(contacts)
+    if not see_contacts(contacts):
+        return
     while True:
         choice = input("\nWhich contact would you like to update? ")
         try:
@@ -90,7 +91,8 @@ def update_contacts(contacts):
             print("Invalid choice. Please select a valid index")
 
 def favorite_contact(contacts):
-    see_contacts(contacts)
+    if not see_contacts(contacts):
+        return
     while True:
         choice = input("\nWhich contact would you like to favorite? ")
         try:
@@ -115,7 +117,7 @@ def favorite_contact(contacts):
     
 def see_favorites(contacts):
     if not contacts:
-        print("\nNo contacts avilable")
+        print("No contacts avilable")
     else:
         counter = 1
         print("\nFavorites list:")
@@ -128,7 +130,8 @@ def see_favorites(contacts):
     return
 
 def delete_contact(contacts):
-    see_contacts(contacts) 
+    if not see_contacts(contacts):
+        return
     while True:
         choice = input("\nWhich contact would you like to delete? ")
         try:
