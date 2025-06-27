@@ -112,3 +112,15 @@ def see_favorites(contacts):
         if counter == 1:
             print("No favorite contacts available")
     return
+
+def delete_contact(contacts):
+    if not see_contacts(contacts):
+        return
+    else:
+        choice = choice_verification(contacts,"Remove")
+        corrected_index = choice - 1
+        removed_contact = contacts.pop(corrected_index)
+
+        print(f"The contact \"{removed_contact["name"]}\" was succesfully removed")
+
+        return
