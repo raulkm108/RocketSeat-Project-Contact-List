@@ -97,3 +97,18 @@ def favorite_contact(contacts):
             print(f"\nThe contact \"{chosen_contact["name"]}\" is now in the favorite list!")
         
         return
+    
+
+def see_favorites(contacts):
+    if not contacts:
+        print("No contacts available!")
+    else:
+        counter = 1
+        print("\nFavorites list:")
+        for contact in contacts:
+            if contact["favorite"] == True:
+                print(f"\n{counter}. {contact["name"]}\nPhone number: {contact["number"]}\nEmail: {contact["email"]}")
+                counter += 1
+        if counter == 1:
+            print("No favorite contacts available")
+    return
