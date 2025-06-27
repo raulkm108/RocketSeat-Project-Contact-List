@@ -2,6 +2,19 @@ import functions
 
 contacts = []
 
+def choice_verification (contacts, verb):
+    while True:
+        choice = input("\nWhich contact would you like to update? ")
+        try:
+            choice = int(choice)
+            if choice < 1 or choice > len(contacts):
+                print("Type a valid contact index number")
+            else:
+                break
+        except ValueError:
+            print("Invalid index, please type an integer number")
+    return
+
 def add_new_contact(contacts):
     name = input("Type the person's name: ")
     number = input("Type it's phone number: ")
