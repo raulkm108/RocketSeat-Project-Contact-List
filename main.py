@@ -1,4 +1,5 @@
-import functions
+import menu_functions
+import vericication_functions
 
 contacts = []
 
