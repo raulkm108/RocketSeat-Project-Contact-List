@@ -18,19 +18,19 @@ while True:
     if choice == "1":
         add_new_contact(contacts)
 
-    if choice == "2":
+    elif choice == "2":
         see_contacts(contacts)
 
-    if choice == "3":
+    elif choice == "3":
         update_contacts(contacts)
 
-    if choice =="4":
+    elif choice =="4":
         favorite_contact(contacts)
 
-    if choice == "5":
+    elif choice == "5":
         see_favorites(contacts)
 
-    if choice =="6":
+    elif choice =="6":
         delete_contact(contacts)
 
     elif choice == "7":
