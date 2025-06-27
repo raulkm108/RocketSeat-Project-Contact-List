@@ -19,3 +19,19 @@ def add_new_contact(contacts):
     print(f"\n{contact["name"]}'s contact was added successfully")
 
     return
+
+def see_contacts(contacts):
+    if not contacts:
+        print("No contacts available!")
+        return False
+    else:
+        print("\nContacts list:")
+        counter = 1
+        for contact in contacts:
+            print(f"\n{counter}. {contact["name"]}\nPhone Number: {contact["number"]}\nEmail: {contact["email"]}")
+            counter += 1
+            if contact["favorite"]:
+                print("Favorite: [✔]")
+            else:
+                print("Favorite: [ ]")
+        return True
