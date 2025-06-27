@@ -155,6 +155,7 @@ def delete_contact(contacts):
 
     print(f"The contact \"{removed_contact["name"]}\" was succesfully removed")
 
+    # previous method before improving it
     '''
     while True:
         choice = input(f"\nWhat would you like to change? ")
