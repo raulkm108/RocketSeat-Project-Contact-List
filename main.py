@@ -133,12 +133,12 @@ def see_favorites(contacts):
 
 def delete_contact(contacts):
     if not contacts:
-        print("\nNo contacts available to favorite!")
+        print("\nNo contacts available to delete!")
         return
     else:
         see_contacts(contacts)
 
-        
+
     '''
     while True:
         choice = input(f"\nWhat would you like to change? ")
