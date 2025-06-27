@@ -131,6 +131,8 @@ def see_favorites(contacts):
             print("No favorite contacts available")
     return
 
+def delete_contact(contacts):
+    
     '''
     while True:
         choice = input(f"\nWhat would you like to change? ")
@@ -189,7 +191,7 @@ while True:
         see_favorites(contacts)
 
     if choice =="6":
-        deleta_contact(contacts)
+        delete_contact(contacts)
 
     elif choice == "7":
         print("Programm terminated")
