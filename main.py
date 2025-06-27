@@ -152,6 +152,8 @@ def delete_contact(contacts):
 
         print(f"The contact \"{removed_contact["name"]}\" was succesfully removed")
 
+        return
+
     # previous method before improving it
     '''
     while True:
@@ -179,7 +181,6 @@ def delete_contact(contacts):
         contacts[corrected_index]["email"] = new_email
         print(f"\nEmail of the contact \"{current_contact["name"]}\" was successfully updated to \"{new_email}\"")
     '''
-    return
 
 
 while True:
